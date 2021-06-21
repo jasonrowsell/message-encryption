@@ -1,5 +1,11 @@
 # Message Encryption
 
+## Overview
+
+Tech test focusing on writing high-quality code, algorithmic understanding, and test driven development (TDD).
+The test requires to build a message-encryption service that transforms input text, using various ciphers, and displays the encrypted message to the console. 
+The program is written in JavaScript and tested with Jest.
+
 ## Spec
 
 The client offers a message-encryption service that transforms input text, using various ciphers, and displays the encrypted message to the console.

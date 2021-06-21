@@ -26,4 +26,9 @@ describe('caesarCipher', () => {
     expect(caesarCipher('foo', 26)).toBe('foo');
     expect(caesarCipher('foo', 28)).toBe('hqq');
   });
+
+  it('handles shift values less than 0', () => {
+    expect(caesarCipher('foo', 0)).toBe('foo');
+    expect(caesarCipher('foo', -2)).toBe('dmm');
+  });
 });

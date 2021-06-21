@@ -13,4 +13,8 @@ describe('caesarCipher', () => {
     expect(caesarCipher('foo', 1)).toBe('gpp');
     expect(caesarCipher('foo', 2)).toBe('hqq');
   });
+
+  it('does not affect numerical characters', () => {
+    expect(caesarCipher('foo123', 1)).toBe('gpp123');
+  });
 });

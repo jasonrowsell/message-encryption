@@ -31,4 +31,11 @@ describe('caesarCipher', () => {
     expect(caesarCipher('foo', 0)).toBe('foo');
     expect(caesarCipher('foo', -2)).toBe('dmm');
   });
+
+  it('handles bad input', () => {
+    expect(caesarCipher()).toBe('');
+    expect(caesarCipher(1, 1)).toBe('');
+    expect(caesarCipher(1, 'foo')).toBe('');
+    expect(caesarCipher('foo')).toBe('foo');
+  });
 });

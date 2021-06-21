@@ -21,4 +21,9 @@ describe('caesarCipher', () => {
   it('handles wrapping past the end of the alphabet', () => {
     expect(caesarCipher('xyz', 2)).toBe('zab');
   });
+
+  it('handles shift values greater than 26', () => {
+    expect(caesarCipher('foo', 26)).toBe('foo');
+    expect(caesarCipher('foo', 28)).toBe('hqq');
+  });
 });

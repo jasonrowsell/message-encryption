@@ -1,4 +1,4 @@
-const { caesarCipher } = require('../src/encryptors');
+import caesarCipher from '../src/encryptors';
 
 describe('caesarCipher', () => {
   it('returns input string', () => {

@@ -20,4 +20,4 @@ const caesarCipher = (str, amount = 0) => {
   return encryptedMessage.join('');
 };
 
-module.exports.caesarCipher = caesarCipher;
+export default caesarCipher;

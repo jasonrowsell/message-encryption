@@ -17,4 +17,8 @@ describe('caesarCipher', () => {
   it('does not affect numerical characters', () => {
     expect(caesarCipher('foo123', 1)).toBe('gpp123');
   });
+
+  it('handles wrapping past the end of the alphabet', () => {
+    expect(caesarCipher('xyz', 2)).toBe('zab');
+  });
 });

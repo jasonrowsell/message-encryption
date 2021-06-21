@@ -38,7 +38,7 @@ Here is your encrypted message:
 > olleh dlrow
 ```
 
-## Planning
+## Planning
 
 ### User Stories
 

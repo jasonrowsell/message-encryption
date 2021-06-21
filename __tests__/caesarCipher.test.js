@@ -22,6 +22,10 @@ describe('caesarCipher', () => {
     expect(caesarCipher('xyz', 2)).toBe('zab');
   });
 
+  it('handles uppcase letters', () => {
+    expect(caesarCipher('FOO', 1)).toBe('GPP');
+  });
+
   it('handles shift values greater than 26', () => {
     expect(caesarCipher('foo', 26)).toBe('foo');
     expect(caesarCipher('foo', 28)).toBe('hqq');

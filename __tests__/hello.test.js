@@ -1,13 +1,7 @@
-const test = require('../src/hello');
+const { caesarCipher } = require('../src/encryptors');
 
-describe('test', () => {
-  it('test works', () => {
-    expect(1 + 2).toEqual(3);
-  });
-});
-
-describe('hello', () => {
-  it('returns hello', () => {
-    expect(test.hello()).toEqual('hello');
+describe('caesarCipher', () => {
+  it('returns string parameter as the output', () => {
+    expect(caesarCipher('foo')).toEqual('foo');
   });
 });

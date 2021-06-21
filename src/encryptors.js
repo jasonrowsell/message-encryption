@@ -1,4 +1,4 @@
-const caesarCipher = (str) => {
+const caesarCipher = (str, amount = 0) => {
   return str;
 };
 
